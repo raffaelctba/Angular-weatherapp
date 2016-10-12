@@ -1,0 +1,50 @@
+﻿
+<div ng-controller="customersCtrl"> 
+	   <div class="fline hconten">
+            <div class="left pdate">
+                <label class="date bold">{{ date }}</label>
+            </div>
+             <div class="right">
+                <div class="fline">
+                    <div class="right">
+                        <form name="myForm" ng-controller="ExampleController">
+							<label class="f20 bold">C</label>
+						    <input type="radio" ng-model="color.name"  ng-value="fc">
+						    <label class="f20 bold">F</label>
+						    <input type="radio" ng-model="color.name" value="f" >	    
+						 </form>
+                    </div> 
+                </div>
+                <div class="clear">
+                </div>
+                <div class="fline">
+                    <label class="">View by:</label> 
+                    <select class="opt" id"sort" name="sort"  ng-model="sort">
+                      <option value="cityName" selected="selected">city</option>
+                      <option value="high">high</option>
+                      <option value="low">low</option>
+                    </select>           
+                </div>
+            </div>
+            <div class="clear">
+            </div>
+        </div>
+	<table>
+	<tr>
+        <th></th> 
+        <th></th>
+        <th></th>
+        <th class="th bold">Hight</th>
+        <th class="th bold">Low</th>
+    </tr>
+	  <tr ng-repeat="x in getWeather | orderBy:myOrderBy">
+	    <td class="bold">{{ x.cityName }}</td>
+	    <td><img class="imgdata" src="{{ x.img }}"/></td>
+	    <td>{{ x.text }}</td>
+	    <td>{{ x.high }}</td>
+	    <td>{{ x.low }}</td>
+	  </tr>
+	</table>
+
+</div>
+

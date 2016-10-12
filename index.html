@@ -1,0 +1,47 @@
+﻿<!doctype html>
+<html>
+<head>
+    <title>Weather application</title>
+    <link rel="stylesheet"  href="css/index.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script> 
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-route.min.js"></script>
+
+    <!--site-->
+    <script src="js/app.js"></script>
+    <script src="js/controllers.js"></script>
+    <script src="js/services.js"></script>
+
+</head>
+<!-- Notice here the ng-app references our 'weatherApp' module -->
+<body ng-app='weatherApp' class="body">
+    <!-- Reference the application level controller for the title model. -->
+    <div  class="center bgconten">
+        <!-- The #home link selects routing for '/home'.  Routing for
+             #add does not exist yet so the default for '/home' will be chosen.-->
+        <div class="fline">
+            <div class="left">
+                <img src="./image/logo.jpg" class="logo"/>
+            </div>
+            <div class="right">
+                <a href="#home" class="menu" >Home</a> 
+                 <a href="#about" class="menu">About</a>
+            </div>
+            <div class="clear">
+            </div>
+        </div>
+    
+       
+        <!-- Our one page app works by switching views here. -->
+        <div class="view">
+            <div id="main">
+                <div ng-view></div>
+            </div>
+        </div><br />
+
+    </div>
+    <!--angular-->
+    <!--site-->
+
+   
+</body>
+</html>

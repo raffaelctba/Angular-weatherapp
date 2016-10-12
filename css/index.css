@@ -1,0 +1,100 @@
+.fline{
+	display: block;
+}
+.left{
+	float: left;
+	display: inline-block;
+}
+.right{
+	float: right;
+	display: inline-block;
+}
+.clear{
+	clear: both;
+}
+.lbl-contact{
+	display: inline-block;
+	min-width: 115px;
+	vertical-align: top;
+	max-width: 280px;
+}
+.fix-input{
+	display: inline-block;
+	min-width: 310px;
+}
+.fix-button{
+	display: inline-block;
+	min-width: 314px;
+}
+.msg{
+	min-width: 308px;
+	display: inline-block;
+}
+.bold{
+	font-weight: bold;
+}
+.center{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 725px;
+}
+.red{
+	color:red;
+}
+.hiden{
+	display: none;
+}
+.green{
+	color: green;
+}
+.logo{
+	width: 110px;
+}
+.menu{
+	font-size: 22px;
+    color: #0CBFBF;
+    height: 70px;
+    display: inline-block;
+    line-height: 5;
+}
+.date{
+	font-size: 30px;
+}
+.hconten{
+	margin-top: 32px;
+}
+.pdate{
+	margin-top: 15px;
+}
+.f20{
+	font-size: 20px;
+}
+.opt{
+	min-width: 90px;
+}
+.body{
+	background-color: beige;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+.bgconten{
+	background-color: white;
+	height: 100%;
+	padding: 10px;
+}
+.view{
+	min-height: 400px;
+}
+.th{
+	width: 50px;
+}
+.imgdata{
+	width: 70px;
+    height: 70px;
+}
+table{
+	
+    width: 100%;
+
+}
